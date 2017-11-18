@@ -21,9 +21,7 @@
 
             = link_to "Log out", destroy_user_session_path, method: :delete, class: 'button btn btn-default'
           - else
-            %button.btn.btn-outline-success.my-2.my-sm-0
-
-              = link_to "Log in", new_user_session_path
+            = link_to "Log in", new_user_session_path, class: 'button btn btn-default'
 
 
 
