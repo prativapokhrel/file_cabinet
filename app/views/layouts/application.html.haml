@@ -17,7 +17,8 @@
 
         .pull-right.button-css
           - if user_signed_in?
-            = link_to "Create a Doc", new_doc_path, class: 'button btn btn-default'
+            = link_to "Create Doc", new_doc_path, class: 'button btn btn-default'
+            &nbsp;
 
             = link_to "Log out", destroy_user_session_path, method: :delete, class: 'button btn btn-default'
           - else
