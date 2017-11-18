@@ -1,4 +1,9 @@
-= simple_form_for @doc do |f|
-  = f.input :title
-  = f.input :content
-  = f.button :submit
+.form-group
+  = f.label :title
+  = f.text_field :title, class: 'form-control'
+
+.form-group
+  = f.label :content
+  = f.text_field :content, class: 'form-control'
+.form-group
+  = submit_tag "Save", :class => "btn btn-default btn-flat"

@@ -1,4 +1,7 @@
-%h1 Edit Doc
-= render 'form'
+.wrapper_with_padding
+  %h1 Edit Doc
+  = form_for @doc, role: 'form' do |f|
+    = render partial: 'form', locals: {f: f}            
 
-= link_to "Cancel", doc_path(@doc)
+
+    = link_to "Cancel", doc_path(@doc)
