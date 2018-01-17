@@ -30,6 +30,9 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+# Icons
+gem 'font-awesome-rails'
+
 gem 'therubyracer'
 
 gem 'bootstrap-sass', '3.3.7'

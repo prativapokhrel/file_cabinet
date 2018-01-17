@@ -19,6 +19,9 @@ class DocsController < ApplicationController
   end
 
   def show
+    @doc = Doc.find(params[:id])
+    liked_by_current_user = @doc.post_likes.where(user_id: current_user.id)
+    @like = liked_by_current_user.last
   end 
 
   def edit

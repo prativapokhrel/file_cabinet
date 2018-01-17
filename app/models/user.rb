@@ -5,6 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
 
   has_many :docs
+  has_many :post_likes
 
   validates :email, uniqueness: true
 
