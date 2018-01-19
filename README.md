@@ -18,7 +18,7 @@ Things you may want to cover:
 - Database initialization
 
 - How to run server locally
-  bundle exec rails s
+  --> bundle exec rails s
 
 - Services (job queues, cache servers, search engines, etc.)
 
