@@ -5,6 +5,10 @@ class DocsController < ApplicationController
     @doc = current_user.docs.build
   end 
 
+  def other_docs
+    @docs = Doc.where.not(user_id: current_user.id).order("created_at DESC")
+  end 
+
   def index
     @docs = Doc.where(user_id: current_user.id).order("created_at DESC")
   end 

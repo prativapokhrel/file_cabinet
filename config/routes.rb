@@ -11,7 +11,9 @@ Rails.application.routes.draw do
 
   root 'welcome#index'
 
-  resources :docs
+  resources :docs do 
+    get  'other_docs', on: :collection
+  end 
 
   resource :post_likes, only: [] do
     member do

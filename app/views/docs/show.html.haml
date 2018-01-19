@@ -11,7 +11,8 @@
 
     -if @like
       = link_to unlike_post_likes_path(doc_id: @doc.id), :controller => :post_likes, :method => :post do 
-        %i.fa.fa-heart{:style=> "padding-left:48.5%; padding-top:2%; font-size: 1.5em;"}
+        %i.fa.fa-heart{:style=> "padding-left:48.5%; padding-top:2%; font-size: 1.5em;"} &nbsp; #{@doc.like_count}
+
     -else
       = link_to like_post_likes_path(doc_id: @doc.id ), :controller => :post_likes, :method => :post do 
-        %i.fa.fa-heart-o{:style=> "padding-left:48.5%; padding-top:2%; font-size: 1.5em;"}
+        %i.fa.fa-heart-o{:style=> "padding-left:48.5%; padding-top:2%; font-size: 1.5em;"} &nbsp; #{@doc.like_count}
